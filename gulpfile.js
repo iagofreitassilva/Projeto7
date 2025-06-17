@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const imagemin =require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 
 function styles() {
     return gulp.src('./src/styles/*.scss')
@@ -9,7 +9,7 @@ function styles() {
 }
 
 function images() {
-    return gulp.src('./src/images/**/*')
+    return gulp.src('./src/styles/*.scss')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'));
 }

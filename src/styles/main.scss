@@ -43,16 +43,16 @@ body {
     @include tittle(44px);
 }
 
-.link-text {
-    @include text(18px);
-    color: $corTextoSecundario;
-    text-decoration: underline
-}
-
 .tittle{
     @include tittle;
 }
 
 .tittle--small {
     @include tittle(28px);
+}
+
+.link-text {
+    @include text(18px);
+    color: $corTextoSecundario;
+    text-decoration: underline
 }
